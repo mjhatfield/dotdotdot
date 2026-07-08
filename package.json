@@ -1,7 +1,7 @@
 {
   "name": "dotdotdot",
   "displayName": "dotdotdot",
-  "description": "Manage Copilot thinking phrase packs through VS Code settings.",
+  "description": "Manage Copilot loading phrase / Thinking Phrase packs with a convenient VS Code extension.",
   "version": "0.0.1",
   "publisher": "mjh",
   "license": "MIT",
@@ -9,7 +9,8 @@
     "copilot",
     "vscode-extension",
     "thinking-phrases",
-    "phrase-packs"
+    "phrase-packs",
+    "loading-phrases"
   ],
   "repository": {
     "type": "git",
