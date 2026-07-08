@@ -1,0 +1,111 @@
+name: Prepare Release Branch
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: Version bump type
+        required: true
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+      base_branch:
+        description: Base branch to branch from
+        required: false
+        default: main
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out base branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.base_branch }}
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Determine next version from tags
+        id: version
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git fetch --tags --force
+          latest_tag="$(git tag --list 'v*' --sort=-v:refname | head -n1)"
+
+          if [[ -z "$latest_tag" ]]; then
+            base_version="0.0.0"
+          else
+            base_version="${latest_tag#v}"
+          fi
+
+          IFS='.' read -r major minor patch <<<"$base_version"
+          bump="${{ github.event.inputs.bump }}"
+
+          case "$bump" in
+            major)
+              major=$((major + 1))
+              minor=0
+              patch=0
+              ;;
+            minor)
+              minor=$((minor + 1))
+              patch=0
+              ;;
+            patch)
+              patch=$((patch + 1))
+              ;;
+            *)
+              echo "Unsupported bump type: $bump" >&2
+              exit 1
+              ;;
+          esac
+
+          new_version="$major.$minor.$patch"
+          new_tag="v$new_version"
+          release_branch="release/$new_tag"
+
+          if git ls-remote --heads origin "$release_branch" | grep -q "$release_branch"; then
+            echo "Branch already exists: $release_branch" >&2
+            exit 1
+          fi
+
+          echo "new_version=$new_version" >> "$GITHUB_OUTPUT"
+          echo "new_tag=$new_tag" >> "$GITHUB_OUTPUT"
+          echo "release_branch=$release_branch" >> "$GITHUB_OUTPUT"
+
+      - name: Bump package versions
+        run: |
+          npm version "${{ steps.version.outputs.new_version }}" --no-git-tag-version
+
+      - name: Commit and push release branch
+        run: |
+          git checkout -b "${{ steps.version.outputs.release_branch }}"
+          git add package.json package-lock.json
+          git commit -m "chore(release): bump version to ${{ steps.version.outputs.new_tag }}"
+          git push -u origin "${{ steps.version.outputs.release_branch }}"
+
+      - name: Summary
+        run: |
+          {
+            echo "## Release branch prepared"
+            echo ""
+            echo "- Base branch: ${{ github.event.inputs.base_branch }}"
+            echo "- Bump type: ${{ github.event.inputs.bump }}"
+            echo "- New version: ${{ steps.version.outputs.new_version }}"
+            echo "- New branch: ${{ steps.version.outputs.release_branch }}"
+            echo ""
+            echo "Open a PR from that branch into your base branch."
+          } >> "$GITHUB_STEP_SUMMARY"

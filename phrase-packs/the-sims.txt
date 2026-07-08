@@ -1,0 +1,143 @@
+##########################################################################
+# The Motherlode
+# Selected Sims Loading Screen Messages added by MJH
+# from: https://sims.fandom.com/wiki/Loading_screen_messages
+##########################################################################
+
+##########################################################################
+# Base Sims 1
+##########################################################################
+Extruding Mesh Terrain
+Balancing Domestic Coefficients
+Inverting Career Ladder
+Calculating Money Supply
+Normalizing Social Network
+Reticulating Splines
+Adjusting Emotional Weights
+Calibrating Personality Matrix
+Inserting Chaos Generator
+
+##########################################################################
+# Living Large
+##########################################################################
+Concatenating Vertex Nodes
+Mapping Influence Attributes
+Assigning Mimic Propagation
+Iterating Chaos Array
+Importing Personality Anchors
+Inserting Extension Algorithms
+
+##########################################################################
+# Hot Date
+##########################################################################
+Renewing Urban Combinatorics
+Redefining Family Values
+Generating Population Model
+Homogenizing Interest Anatomy
+Establishing Gift Registry
+Randomizing Inhabitant Characteristics
+Readjusting Emotional Weights
+
+##########################################################################
+# Vacation
+##########################################################################
+Activating Hotel Staff
+Importing Entertainment Talent
+Updating Vacancy Request Hotline
+Downloading Weather Data
+Hyperactivating Children
+Still Reticulating Splines
+Updating Hotel Registry
+Calculating Exchange Rate
+Activating Deviance Threshold
+
+##########################################################################
+# Unleashed
+##########################################################################
+Adapting Behavioral Model
+Reconfiguring Genetic Algorithms
+Hybridizing Plant Material
+Reticulating Splines Again
+Unfolding Helix Packet
+Synthesizing Natural Selection
+Enabling Lot Commercialization
+Recomputing Mammal Matrix
+Augmenting Occupational Conduits
+Initializing Operant Construct
+
+##########################################################################
+# Superstar
+##########################################################################
+Generating Schmoozing Algorithm
+Populating Empyreal Entities
+Configuring Studio Operations
+Reticulating Golden Splines
+Composing Melodic Euphony
+Spreading Rumors
+Polarizing Image Conduits
+Calibrating Fame Indicant
+Strengthening Award Foundations
+Abstracting Loading Procedures
+
+##########################################################################
+# Making Magic
+##########################################################################
+Locating Misplaced Calculations
+Eliminating Would-be Chicanery
+Tabulating Spell Effectors
+Reticulating Unreticulated Splines
+Recycling Hex Decimals
+Binding Trace Enchantments
+Fabricating Imaginary Infrastructure
+Optimizing Baking Temperature
+Ensuring Transplanar Synergy
+Simulating Program Execution
+
+##########################################################################
+# Complete Collection
+##########################################################################
+Interpreting Family Values
+Compiling Reticulated Splines
+
+##########################################################################
+# Sims 2
+##########################################################################
+Chlorinating Car Pools
+Partitioning Social Network
+Prelaminating Drywall Inventory
+Blurring Reality Lines
+Reticulating 3-Dimensional Splines
+Preparing Captive Simulators
+Capacitating Genetic Modifiers
+Destabilizing Orbital Payloads
+Sequencing Cinematic Specifiers
+Branching Family Trees
+Manipulating Modal Memory
+
+##########################################################################
+# Sims 3
+##########################################################################
+Expanding Horizons
+Unloading Loading Screens
+Mediating Modifiers
+Reticulating 4-D Splines
+Ascending Maslow's Hierarchy
+Mapping the Llama Genome
+Tabulating Traits
+Calibrating Social Distance
+Threading Fabric Compositors
+Texture-Compositing Teddy Bears
+
+##########################################################################
+# Into the Future
+##########################################################################
+Synthesizing Recipes
+Calibrating Nanites
+Integrating Trait Chips
+Bending Time and Space
+Charging Plumbots
+Materializing Holographs
+Repairing Time Continuum
+Engaging Tube Elevators
+Automating Plumbots
+Measuring Singularity

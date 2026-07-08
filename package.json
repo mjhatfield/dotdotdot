@@ -1,0 +1,90 @@
+{
+  "name": "dotdotdot",
+  "displayName": "dotdotdot",
+  "description": "Manage Copilot thinking phrase packs through VS Code settings.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "license": "MIT",
+  "keywords": [
+    "copilot",
+    "vscode-extension",
+    "thinking-phrases",
+    "phrase-packs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjhatfield/dotdotdot.git"
+  },
+  "homepage": "https://github.com/mjhatfield/dotdotdot",
+  "bugs": {
+    "url": "https://github.com/mjhatfield/dotdotdot/issues"
+  },
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "icon": "assets/icon.png",
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "dotdotdot.enable",
+        "title": "dotdotdot: Enable"
+      },
+      {
+        "command": "dotdotdot.disable",
+        "title": "dotdotdot: Disable"
+      },
+      {
+        "command": "dotdotdot.applyNow",
+        "title": "dotdotdot: Apply Phrase Packs Now"
+      },
+      {
+        "command": "dotdotdot.restoreNow",
+        "title": "dotdotdot: Restore Previous Copilot Phrases"
+      },
+      {
+        "command": "dotdotdot.previewPhrases",
+        "title": "dotdotdot: Preview Active Phrases"
+      }
+    ],
+    "configuration": {
+      "title": "dotdotdot",
+      "properties": {
+        "dotdotdot.enabled": {
+          "type": "boolean",
+          "default": false,
+          "description": "I want DOTDOTDOT to manage the Thinking Phrases for my Chat Agent."
+        },
+        "dotdotdot.phrasePack.the-sims": {
+          "type": "boolean",
+          "default": true,
+          "description": "Motherlode Pack (The Sims)\nLoading messages from various The Sims games. Worth at least 50,000 Simoleons."
+        },
+        "dotdotdot.phrasePack.dwarf-fortress": {
+          "type": "boolean",
+          "default": false,
+          "description": "Hidden Fun Stuff (HFS) Pack (Dwarf Fortress)\nPhrases inspired by Dwarf Fortress patch notes and inside jokes."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "tsx --test test/**/*.test.ts",
+    "test:watch": "tsx --test --watch test/**/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.15",
+    "@types/vscode": "^1.95.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.5.4"
+  }
+}

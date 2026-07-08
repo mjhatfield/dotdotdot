@@ -1,0 +1,74 @@
+##########################################################################
+# Hidden Fun Stuff (HFS)
+# Tense-modified Dwarf Fortress Patch Notes added by MJH
+# from: https://www.pcgamer.com/the-most-ridiculous-patch-notes-from-10-years-of-dwarf-fortress/
+##########################################################################
+
+Fixing a bug where animals could rent rooms
+Fixing a bug with animals picking out clothes to wear
+Cleaning up the bear situation
+Adding cat butchery
+Fixing a problem with undead passing out from strangling
+Making the corpses of small animals that die out of water stop teleporting
+Making dwarves care if you melt down their masterpieces
+Stopping soldiers from going to parties
+Adding mouths
+Adding an aperture flag that stops mouths from being gouged out
+Stopping children from buying shops
+Stopping happy thoughts from sleeping in beds in amazing dining rooms
+Fixing a bug where all the local rock turns into sky whenever migrant groups are created anywhere in the world
+Making semimegabeasts get along better with their cave friends
+Fixing a problem with blood hanging in the air
+Stopping elves from being pleased with unethical trades
+Stopping children and babies from joining you on your adventures
+Allowing dwarves to get married
+Making thieves and their support groups respect each other
+Stopping booze food from melting, even though it probably should
+Making dungeon masters happy with their cloaks and boots again
+Making all undead respectful of one another
+Fixing a problem with the king coming early and not actually showing up
+Stopping aerial births
+Fixing a problem causing dwarves to target harmless insane people while making evil creatures spare them and babies
+Stopping looping dwarves from constantly trying out gloves and boots when they should just pick one and go
+Removing alligator hair and other unintended attributes
+Stopping rain from killing everything it lands on
+Stopping dwarves from choosing weapons that are too big to use
+Dressing humans in farming houses
+Adding ears to tigermen
+Fixing blind cave bears with front toes on both front and rear feet
+Stopping magma crabs from drowning in magma
+Removing dead dwarves from their squads
+Adding teeth to rodent men
+Stopping honeycombs from getting encrusted with jewels
+Stopping zombie hens from claiming nests and laying regular eggs
+Keeping uninjured dwarves from resting in hospitals and requesting endless tooth surgery
+Stopping dwarves from playing tug of war with caged animals marked for slaughter
+Letting serpent men kick as intended
+Fixing primates with no arms or hands but mysteriously placed fingers
+Making rodent men use their new teeth to bite
+Stopping vampire ghosts from still drinking blood
+Preventing melting iceberg naps from turning dwarves into demons or other underground creatures
+Counting boots as shoes so the military stops having bad thoughts
+Stopping vampires from accusing babies of killing victims
+Keeping dwarf children from dying of embarrassment over being undressed at age two
+Keeping weasels off glaciers
+Stopping undead cats from adopting dwarves
+Stopping scout vampires from bragging about murders committed while scouting
+Fixing undead dwarves contracting were-chameleon curses
+Stopping dwarves from missing completely unrelated dwarves
+Reducing lag caused by fat dwarves eating
+Stopping copper coins from passing through boars when thrown
+Stopping zombies from chatting with necromancer adventurers trying to sleep in their houses
+Stopping dwarves from cleaning missing body parts
+Stopping animals from grazing only the pasture's top-left corner and starving
+Tuning down social skill gains from party attendance
+Stopping animals from getting attached to clothes they are wearing
+Allowing animal breeding without requiring willingness to marry
+Letting moon snail men punch and see
+Investigating cats dying for no reason from suspected alcohol poisoning
+Making it possible to satisfy the need for introspection
+Unfreezing time and restoring re-entry to the time continuum
+Fixing incorrect use of "whom" in elf.txt
+Reducing unreasonably high skill gain from nonlethal falls onto upright spikes
+Making dwarves use picks after unforbidding picks while traders with their own picks are present
+Keeping giraffes trainable for war
