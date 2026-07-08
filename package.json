@@ -3,7 +3,7 @@
   "displayName": "dotdotdot",
   "description": "Manage Copilot thinking phrase packs through VS Code settings.",
   "version": "0.0.1",
-  "publisher": "local",
+  "publisher": "mjh",
   "license": "MIT",
   "keywords": [
     "copilot",
